@@ -1,0 +1,50 @@
+符号注释
+	通用
+		1d100n  投掷 1 个最大 100 点的骰子，存在大成功/大失败判定
+		1d100 同，但不判定大成功/大失败
+	人称
+		self 自己
+		target 目标
+		targets 所有目标
+		teammate 队友
+		enemy 敌人
+		teammates 有关的所有队友
+		enemies 有关的所有敌人
+	
+攻击目标（近战）
+	me.d[0] = 1d100
+	if Clamp(me.hit - target.speed, -30, 30 ) + d[0] >=
+		80
+			近战暴击
+		30 + Clamp(target.defence - me.force, -20, 20)
+			近战命中
+		default
+			近战未命中
+		
+近战暴击
+	target.hp -= (me.damage + me.force * 0.25) * Clamp01(ap / armor) * 4
+近战命中
+	target.hp -= me.damage * Clamp01(ap / armor) * Clamp(me.d[0], 50, 100) / 100 * 4
+近战未命中
+	ret
+
+攻击目标（枪械）
+	me.d[0] = 1d100
+	if me.hit + me.control + me.d[0] - target.speed >=
+		180
+			枪械爆头
+		120
+			枪械暴击
+		80
+			枪械命中
+		default
+			枪械未命中
+
+枪械爆头
+	target.hp == 0
+枪械暴击
+	target.hp -= me.damage * Clamp01(ap / armor) * 1.2
+枪械命中
+	target.hp -= me.damage * Clamp01(ap / armor) * me.d[0] / 100
+枪械未命中
+	ret
