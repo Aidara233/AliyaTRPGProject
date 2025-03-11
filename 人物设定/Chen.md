@@ -2,7 +2,7 @@
 
 姓名：Chen
 
-原型：Aliya（？
+原型：Aliya
 
 ## 基本
 
