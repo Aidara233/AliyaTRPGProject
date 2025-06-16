@@ -1,9 +1,11 @@
 {
+	"id": "template_cards",
 	"name": "模板卡牌集",
 	"type": "武器",
 	"desc": "这是一个模板卡牌集，供玩家和GM参考使用。",
 	"cards": [
 		{
+			"id":"template_cards_attack",
 			"name": "挥砍",
 			"type": "攻击",
 			"tags": [
@@ -17,6 +19,7 @@
 			"count": 2
 		},
 		{
+			"id":"template_cards_defend",
 			"name": "格挡",
 			"type": "技能",
 			"tags": [

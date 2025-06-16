@@ -1,0 +1,59 @@
+{
+	"id": "pistol",
+	"name": "手枪",
+	"type": "武器",
+	"desc": "通用的小手枪。",
+	"cards": [
+		{
+			"id":"pistol_reload",
+			"name": "装填弹药",
+			"type": "技能",
+			"tags": [],
+			"desc": "装填子弹",
+			"effect": "需要消耗 1 个弹匣。将弹药数恢复到最大。本回合无法进行攻击。",
+			"cost": 2,
+			"cd": 0
+		},
+		{
+			"id":"pistol_aim",
+			"name": "瞄准目标",
+			"type": "技能",
+			"tags": [],
+			"desc": "为了进行射击的必要步骤",
+			"effect": "锁定一个目标。目标移动后锁定将失效。",
+			"cost": 1,
+			"cd": 0
+		},
+		{
+			"id":"pistol_shoot",
+			"name": "点射",
+			"type": "攻击",
+			"tags": [],
+			"desc": "中精度的远程攻击方式",
+			"effect": "需要消耗 1 个弹药。对锁定的目标造成 1d6 点伤害。",
+			"cost": 1,
+			"range": 4,
+			"cd": 1,
+			"count": 2
+		},
+		{
+			"id":"pistol_defend",
+			"name": "格挡",
+			"type": "技能",
+			"tags": [],
+			"desc": "简简单单的防御方式",
+			"effect": "获得 5 点格挡。",
+			"cost": 2,
+			"cd": 2,
+			"count": 2
+		},
+		{
+			"id":"pistol_ammo",
+			"name": "弹药",
+			"type": "状态",
+			"tags": [],
+			"desc": "手枪的弹药。",
+			"effect": "无法被打出。最大持有 3 个。"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "knife",
+	"name": "小刀",
+	"type": "武器",
+	"desc": "我说你真的有必要带着这玩意去打架吗喂？",
+	"cards": [
+		{
+			"id": "knife_attack",
+			"name": "挥砍",
+			"type": "攻击",
+			"tags": [],
+			"desc": "小刀真的能打得动人吗？",
+			"effect": "对指定目标造成 1d4 点伤害。",
+			"cost": 1,
+			"range": 1,
+			"cd": 2,
+			"count": 3
+		},
+		{
+			"id": "knife_defend",
+			"name": "格挡",
+			"type": "技能",
+			"tags": [],
+			"desc": "小刀拿来格挡还是太勉强了吧？",
+			"effect": "获得 1d4 点格挡。",
+			"cost": 1,
+			"cd": 2,
+			"count": 2
+		}
+	]
+}

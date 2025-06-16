@@ -1,9 +1,11 @@
 {
+	"id": "standard_battle_cards",
 	"name": "标准战斗卡牌集",
 	"type": "标准",
 	"desc": "标准战斗卡牌集默认会附加到所有角色上，以便提供最基本的功能",
 	"cards": [
 		{
+			"id": "standard_move_forward",
 			"name": "正向移动",
 			"type": "移动",
 			"tags": [],
@@ -14,6 +16,7 @@
 			"count": 2
 		},
 		{
+			"id": "standard_move_diagonal",
 			"name": "斜向移动",
 			"type": "移动",
 			"tags": [],
@@ -23,6 +26,7 @@
 			"cd": 2
 		},
 		{
+			"id":"standard_emergency_attack",
 			"name": "肘击",
 			"type": "攻击",
 			"tags": [],
@@ -33,6 +37,7 @@
 			"cd": 2
 		},
 		{
+			"id":"standard_emergency_defend",
 			"name": "提膝",
 			"type": "技能",
 			"tags": [],
